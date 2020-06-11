@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+
+  pypi-server:
+    container_name: pypi-server
+    image: pypiserver/pypiserver:latest
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./pypi-server/auth:/data/auth
+      - ./pypi-server/packages:/data/packages
+    command: -P /data/auth/.htpasswd -a update,download,list /data/packages

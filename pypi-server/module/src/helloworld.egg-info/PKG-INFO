@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: helloworld
+Version: 0.0.1
+Summary: Say hello!
+Home-page: https://github.com/FernandoBRdgz/pypi-private-server
+Author: Fernando Barranco
+Author-email: fernando.barranco.r@gmail.com
+License: UNKNOWN
+Description: # Hello World
+        
+        This is an example project demostrating how to publish a pythom module to PyPI.
+        
+        ## Installation
+        
+        Run the following to install:
+        ```python
+        pip install helloworld
+        ```
+        
+        ## Usage
+        
+        ```python
+        from helloworld import say_hello
+        
+        # Generate "Hello, World!"
+        say_hello()
+        
+        # Generate "Hello, Everybody!"
+        say_hello("Everybody")
+        ```
+Platform: UNKNOWN
+Classifier: Operating System :: Unix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: type/markdown
+Provides-Extra: dev
